@@ -681,31 +681,21 @@ int main()
         writeCsv << "\"";
         for (unsigned int i = 0; i < Digimon_Database.at(Digimon_Count).DeDigivolve_Options.size();i++)
         {
-            writeCsv << Digimon_Database.at(Digimon_Count).DeDigivolve_Options.at(i);
-            if (i < Digimon_Database.at(Digimon_Count).DeDigivolve_Options.size())
-                writeCsv << "|";
+            writeCsv << Digimon_Database.at(Digimon_Count).DeDigivolve_Options.at(i) << "|";
         }
-        writeCsv << "\"";
-
-        writeCsv << " ";
+        writeCsv << "\" ";
 
         writeCsv << "\"";
         for (unsigned int i = 0; i < Digimon_Database.at(Digimon_Count).Digivolve_Options.size();i++)
         {
-            writeCsv << Digimon_Database.at(Digimon_Count).Digivolve_Options.at(i);
-            if (i < Digimon_Database.at(Digimon_Count).Digivolve_Options.size())
-                writeCsv << "|";
+            writeCsv << Digimon_Database.at(Digimon_Count).Digivolve_Options.at(i) << "|";
         }
-        writeCsv << "\"";
-
-        writeCsv << " ";
+        writeCsv << "\" ";
 
         writeCsv << "\"";
         for (unsigned int i = 0; i < Digimon_Database.at(Digimon_Count).MoveList.size();i++)
         {
-            writeCsv << Digimon_Database.at(Digimon_Count).MoveList.at(i);
-            if (i < Digimon_Database.at(Digimon_Count).MoveList.size())
-                writeCsv << "|";
+            writeCsv << Digimon_Database.at(Digimon_Count).MoveList.at(i) << "|";
         }
         writeCsv << "\"";
 
